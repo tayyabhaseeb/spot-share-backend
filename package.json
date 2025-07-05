@@ -1,0 +1,34 @@
+{
+  "name": "spot-share-backend",
+  "version": "1.0.0",
+  "description": "Backend API for the Spot Share app",
+  "main": "listen.js",
+  "scripts": {
+    "start": "node listen.js",
+    "setup-dbs": "psql -f ./db/setup.sql",
+    "seed": "node ./db/seeds/run-seed.js",
+    "test": "jest",
+    "seed-prod": "NODE_ENV=production npm run seed"
+  },
+  "keywords": [],
+  "author": "Tayyab Haseeb",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.2",
+    "jest": "^27.5.1",
+    "jest-extended": "^2.0.0",
+    "pg-format": "^1.0.4",
+    "supertest": "^7.1.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "pg": "^8.16.3"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "jest-extended/all"
+    ]
+  }
+}
