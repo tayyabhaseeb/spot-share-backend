@@ -1,1 +1,1 @@
-const notifications = [];
+module.exports = [];

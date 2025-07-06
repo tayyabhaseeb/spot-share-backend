@@ -1,4 +1,4 @@
-const places = [
+module.exports = [
   {
     creator: 2,
     title: "Heaton Park",

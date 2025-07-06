@@ -1,4 +1,4 @@
-const comments = [
+module.exports = [
   {
     body: "Such a peaceful place! I love coming here to relax.",
     likes: 12,
