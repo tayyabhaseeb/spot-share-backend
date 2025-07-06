@@ -1,4 +1,4 @@
-const images = [
+module.exports = [
   {
     url: "https://images.unsplash.com/photo-1561489429-3b4d5162b20e",
     location: "Heaton Park",
